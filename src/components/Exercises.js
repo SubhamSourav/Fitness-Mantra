@@ -5,7 +5,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
 
-const Exercises = ({ exercises, setExercises, bodyPart }) => {
+const Exercises = ({ exercises, setExercises, bodyPart, setonHome }) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const exercisesPerPage = 9;
@@ -55,7 +55,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         justifyContent="center"
       >
         {currentExercises.map((exercise, index) => (
-          <ExerciseCard key={index} exercise={exercise} />
+          <ExerciseCard key={index} exercise={exercise} setonHome={setonHome} />
         ))}
       </Stack>
       <Stack mt="100px" alignItems="center">

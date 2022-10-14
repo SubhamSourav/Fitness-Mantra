@@ -20,7 +20,7 @@ const Footer = () => (
       textAlign="center"
       pb="40px"
     >
-      Made with Subham Sourav Brahma
+      Made by Subham Sourav Brahma
     </Typography>
   </Box>
 );
