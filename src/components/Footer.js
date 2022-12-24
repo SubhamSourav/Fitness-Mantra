@@ -1,7 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
-import Logo from "../assets/images/Logo-1.png";
-
+import { Typography } from "@mui/material";
 const Footer = () => (
   <Typography
     variant="h5"
